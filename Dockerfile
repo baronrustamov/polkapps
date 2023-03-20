@@ -20,7 +20,7 @@ RUN yarn && NODE_ENV=production yarn build:www
 FROM nginx:stable-alpine
 
 # The following is mainly for doc purpose to show which ENV is supported
-ENV WS_URL=polkapps.tango.prtl.cc
+ENV WS_URL=ws://polkapps.tango.prtl.cc
 
 WORKDIR /usr/share/nginx/html
 
